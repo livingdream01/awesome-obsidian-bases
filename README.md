@@ -1,7 +1,10 @@
+<img src="assets/banner.svg" alt="Awesome Obsidian Bases" width="100%">
+
 # Awesome Obsidian Bases [![Awesome](https://awesome.re/badge.svg)](https://awesome.re)
 
 [![License: CC0-1.0](https://img.shields.io/badge/License-CC0%201.0-lightgrey.svg)](https://creativecommons.org/publicdomain/zero/1.0/)
 [![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg)](https://github.com/livingdream01/awesome-obsidian-bases/pulls)
+[![Website](https://img.shields.io/badge/website-live-059669.svg)](https://livingdream01.github.io/awesome-obsidian-bases/)
 [![Linted by awesome-lint](https://img.shields.io/badge/linted%20by-awesome--lint-blue.svg)](https://github.com/sindresorhus/awesome-lint)
 
 A curated list of everything built on Obsidian Bases, the native, file-based
@@ -20,6 +23,7 @@ no abandoned experiments, no padding. Maintained by
 
 - [Official](#official)
 - [What is Bases](#what-is-bases)
+- [Screenshots](#screenshots)
 - [Views & Layouts](#views--layouts)
 - [Starter Vaults](#starter-vaults)
 - [Agent skills and MCP](#agent-skills-and-mcp)
@@ -62,6 +66,15 @@ views:
 
 Point Obsidian at it and you have a live, sortable, filterable table over your
 notes. Ready-to-try files live in [`examples/`](examples).
+
+## Screenshots
+
+Illustrations of the kind of views you can build from the `examples/` files — a
+**People** table, and a **Renewals** register with due dates.
+
+![A Bases People table](assets/screenshot-people.png)
+
+![A Bases renewals register](assets/screenshot-registers.png)
 
 ## Views & Layouts
 

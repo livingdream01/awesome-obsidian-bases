@@ -1,0 +1,100 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Awesome Obsidian Bases</title>
+<meta name="description" content="A curated list of everything built on Obsidian Bases: views, plugins, starter vaults, agent tooling and examples.">
+<meta property="og:title" content="Awesome Obsidian Bases">
+<meta property="og:image" content="assets/banner.svg">
+<script src="https://cdn.tailwindcss.com"></script>
+<style>
+  body{background:#fafaf9;color:#0f172a;-webkit-font-smoothing:antialiased}
+  .prose h2{font-family:Georgia,serif;font-size:1.5rem;margin:2.2rem 0 .6rem;padding-top:.4rem}
+  .prose h3{font-weight:600;margin:1.4rem 0 .4rem}
+  .prose p{margin:.6rem 0;color:#334155;line-height:1.7}
+  .prose ul{margin:.4rem 0 1rem 1.1rem;list-style:disc}
+  .prose li{margin:.3rem 0;color:#334155}
+  .prose li::marker{color:#a8a29e}
+  .prose a{color:#047857;text-decoration:none;font-weight:500}
+  .prose a:hover{text-decoration:underline}
+  .prose code{font-family:ui-monospace,Menlo,monospace}
+  .prose pre{background:#0f172a;color:#e2e8f0;padding:1rem;border-radius:.6rem;overflow:auto;font-size:.82rem;margin:1rem 0}
+  .prose pre code{background:none;color:inherit}
+  .prose blockquote{border-left:3px solid #d6d3d1;padding-left:1rem;color:#57534e;margin:.8rem 0}
+  .prose img{max-width:100%;border-radius:.5rem}
+</style>
+</head>
+<body>
+<header class="max-w-5xl mx-auto px-5 pt-8">
+  <h1 class="sr-only">Awesome Obsidian Bases</h1>
+  <img src="assets/banner.svg" alt="Awesome Obsidian Bases" class="w-full rounded-xl shadow-sm">
+  <div class="mt-4 flex flex-wrap items-center gap-3 text-sm">
+    <a href="https://github.com/livingdream01/awesome-obsidian-bases" class="rounded-lg bg-stone-900 text-white px-4 py-2 font-medium">View on GitHub</a>
+    <a href="https://github.com/livingdream01/awesome-obsidian-bases/stargazers" class="rounded-lg border border-stone-300 px-4 py-2">★ Star</a>
+    <span class="text-stone-500">CC0 · verified links · updated weekly</span>
+  </div>
+</header>
+<main class="max-w-5xl mx-auto px-5 py-8 grid grid-cols-1 md:grid-cols-[200px_1fr] gap-10">
+  <nav class="hidden md:block sticky top-8 self-start">
+    <div class="text-xs uppercase tracking-widest text-stone-400 mb-2">On this page</div>
+    <a href="#official" class="block py-1 text-sm text-stone-600 hover:text-emerald-700">Official</a><a href="#what-is-bases" class="block py-1 text-sm text-stone-600 hover:text-emerald-700">What is Bases</a><a href="#screenshots" class="block py-1 text-sm text-stone-600 hover:text-emerald-700">Screenshots</a><a href="#views-layouts" class="block py-1 text-sm text-stone-600 hover:text-emerald-700">Views & Layouts</a><a href="#starter-vaults" class="block py-1 text-sm text-stone-600 hover:text-emerald-700">Starter Vaults</a><a href="#agent-skills-and-mcp" class="block py-1 text-sm text-stone-600 hover:text-emerald-700">Agent skills and MCP</a><a href="#tools-utilities" class="block py-1 text-sm text-stone-600 hover:text-emerald-700">Tools & Utilities</a><a href="#related-mcp-and-vault-access" class="block py-1 text-sm text-stone-600 hover:text-emerald-700">Related: MCP and vault access</a><a href="#related-agent-memory" class="block py-1 text-sm text-stone-600 hover:text-emerald-700">Related: agent memory</a><a href="#related-importers" class="block py-1 text-sm text-stone-600 hover:text-emerald-700">Related: importers</a><a href="#contributing" class="block py-1 text-sm text-stone-600 hover:text-emerald-700">Contributing</a>
+  </nav>
+  <article class="prose max-w-none">
+<p>A curated list of everything built on Obsidian Bases, the native, file-based database layer for your vault: views, plugins, starter vaults, templates, agent tooling and examples.</p>
+<p>Bases turns your Markdown notes into queryable tables, cards and views with no plugin, no database and no lock-in. It shipped as a core Obsidian feature and the ecosystem around it is just getting started. That is exactly why this list exists.</p>
+<p>Every entry is usable today, Bases-specific, and verified by hand. No dead links, no abandoned experiments, no padding. Maintained by <a href="https://github.com/livingdream01" target="_blank" rel="noopener">@livingdream01</a>.</p>
+<h2 id="official">Official</h2>
+<ul><li><a href="https://help.obsidian.md/bases" target="_blank" rel="noopener">Bases documentation</a> - The official guide to views, filters and properties.</li><li><a href="https://help.obsidian.md/bases/syntax" target="_blank" rel="noopener">Bases syntax reference</a> - The full <code class="rounded bg-stone-100 px-1 py-0.5 text-[.8em]">.base</code> file structure: <code class="rounded bg-stone-100 px-1 py-0.5 text-[.8em]">filters</code>, <code class="rounded bg-stone-100 px-1 py-0.5 text-[.8em]">formulas</code>, <code class="rounded bg-stone-100 px-1 py-0.5 text-[.8em]">properties</code>, <code class="rounded bg-stone-100 px-1 py-0.5 text-[.8em]">views</code>.</li><li><a href="https://help.obsidian.md/formulas" target="_blank" rel="noopener">Bases formulas</a> - Functions and expressions for computed properties.</li><li><a href="https://obsidian.md/changelog" target="_blank" rel="noopener">Obsidian changelog</a> - Bases ships as a core plugin; track what lands each release.</li></ul>
+<h2 id="what-is-bases">What is Bases</h2>
+<p>A <code class="rounded bg-stone-100 px-1 py-0.5 text-[.8em]">.base</code> file is a small YAML document that queries the notes in your vault by their frontmatter and renders the result as a table, cards, a map or a chart. No plugin, no server, just a file, and it is an open format.</p>
+<pre><code># People.base - everyone in the vault, grouped by org
+filters:
+  and:
+    - type == "person"
+properties:
+  org:
+    displayName: Org
+  phone:
+    displayName: Phone
+views:
+  - type: table
+    name: People
+    order:
+      - file.name
+      - org
+      - phone</code></pre>
+<p>Point Obsidian at it and you have a live, sortable, filterable table over your notes. Ready-to-try files live in <a href="examples"><code class="rounded bg-stone-100 px-1 py-0.5 text-[.8em]">examples/</code></a>.</p>
+<h2 id="screenshots">Screenshots</h2>
+<p>Illustrations of the kind of views you can build from the <code class="rounded bg-stone-100 px-1 py-0.5 text-[.8em]">examples/</code> files — a <strong>People</strong> table, and a <strong>Renewals</strong> register with due dates.</p>
+<p><img alt="A Bases People table" src="assets/screenshot-people.png" class="inline-block"></p>
+<p><img alt="A Bases renewals register" src="assets/screenshot-registers.png" class="inline-block"></p>
+<h2 id="views-layouts">Views &amp; Layouts</h2>
+<p>Custom view types and layouts for Bases.</p>
+<ul><li><a href="https://github.com/FrancescoUmberto/GoodBases" target="_blank" rel="noopener">GoodBases</a> - A Notion-style view with colored value pills, hover actions and inline cell editing.</li><li><a href="https://github.com/obsidianmd/obsidian-maps" target="_blank" rel="noopener">obsidian-maps</a> - Official map layout; display notes as an interactive map.</li><li><a href="https://github.com/churnish/dynamic-views" target="_blank" rel="noopener">dynamic-views</a> - Elegant grid and masonry card views.</li><li><a href="https://github.com/sean2077/obsidian-bases-paginator" target="_blank" rel="noopener">bases-paginator</a> - A paginated table view with column filtering.</li><li><a href="https://github.com/zobweyt/obsidian-charts" target="_blank" rel="noopener">obsidian-charts</a> - A customizable, native-feeling chart layout built with pure SVG and zero dependencies.</li><li><a href="https://github.com/DavidHurtadoAI/just-simple-calendar" target="_blank" rel="noopener">just-simple-calendar</a> - A calendar view with no external libraries.</li><li><a href="https://github.com/flowing-abyss/obsidian-bases-board" target="_blank" rel="noopener">obsidian-bases-board</a> - Kanban and gallery views.</li><li><a href="https://github.com/sil-so/obsidian-bases-kanban" target="_blank" rel="noopener">obsidian-bases-kanban</a> - A Kanban board view to group by status and drag cards.</li><li><a href="https://github.com/dsebastien/obsidian-graph-explorer-base-view" target="_blank" rel="noopener">graph-explorer-base-view</a> - Renders notes as an interactive force-directed graph.</li><li><a href="https://github.com/dsebastien/obsidian-bookshelf" target="_blank" rel="noopener">obsidian-bookshelf</a> - Display notes as a visual bookshelf with real book covers.</li><li><a href="https://github.com/olegbrovchenko/bases-tag-colors" target="_blank" rel="noopener">bases-tag-colors</a> - Per-base tag colors and Notion-style pills.</li><li><a href="https://github.com/Chizmo-byte/obsidian-bases-relation-diagram" target="_blank" rel="noopener">bases-relation-diagram</a> - Visualize Relation and Lookup properties as a node diagram.</li><li><a href="https://github.com/oxilldat/obsidian-person-network" target="_blank" rel="noopener">obsidian-person-network</a> - Your people as an interactive relationship map.</li><li><a href="https://github.com/tteschon/obsidian-task-base" target="_blank" rel="noopener">obsidian-task-base</a> - Note-per-task management with RFC 5545 recurrence, backed by a Bases file.</li><li><a href="https://github.com/banisterious/obsidian-charted-roots" target="_blank" rel="noopener">obsidian-charted-roots</a> - Genealogical family charts and maps with Bases integration.</li><li><a href="https://github.com/Jin1c-3/obsidian-advanced-maps" target="_blank" rel="noopener">obsidian-advanced-maps</a> - A photo atlas and route viewer with its own Bases view.</li></ul>
+<h2 id="starter-vaults">Starter Vaults</h2>
+<p>Vaults you can clone and use immediately, with Bases wired up.</p>
+<ul><li><a href="https://github.com/weiihann/obsidian-vault-template" target="_blank" rel="noopener">obsidian-vault-template (weiihann)</a> - A PKM starter using Categories, Bases, Templater and optional Claude Code integration.</li><li><a href="https://github.com/alexmarnell/obsidian-lifecycle" target="_blank" rel="noopener">obsidian-lifecycle (alexmarnell)</a> - Lifecycle-stage folders organised with MOCs and Bases.</li><li><a href="https://github.com/SeanYHan888/obsidian-workflow-starter" target="_blank" rel="noopener">obsidian-workflow-starter (SeanYHan888)</a> - A bilingual starter with daily capture, projects, weekly reviews and Bases.</li><li><a href="https://github.com/gexiro-global/ai-vault-contract" target="_blank" rel="noopener">ai-vault-contract (gexiro-global)</a> - A starter vault plus a write contract for AI-maintained knowledge bases.</li><li><a href="https://github.com/SimonSkade1/obsidian-team-vault" target="_blank" rel="noopener">obsidian-team-vault (SimonSkade1)</a> - A team project-management vault using Bases, Syncthing and Claude Code.</li><li><a href="https://github.com/resMagi/obsidian-media-starter-vault" target="_blank" rel="noopener">obsidian-media-starter-vault (resMagi)</a> - Track films, series, books and games with Bases watchlists.</li><li><a href="https://github.com/CLSherrod/crm-markdown" target="_blank" rel="noopener">crm-markdown (CLSherrod)</a> - A local-first CRM in Markdown with Bases dashboards for reminders and follow-ups.</li><li><a href="https://github.com/livingdream01/bases-vault" target="_blank" rel="noopener">bases-vault (livingdream01)</a> - A Bases-native, agent-ready starter vault with a four-layer structure, an agent index and zero-dependency scripts.</li></ul>
+<h2 id="agent-skills-and-mcp">Agent skills and MCP</h2>
+<p>Let an agent read and query Bases, the open format.</p>
+<ul><li><a href="https://github.com/kepano/obsidian-skills" target="_blank" rel="noopener">obsidian-skills (kepano)</a> - Agent skills from Obsidian's creator; teaches agents Markdown, Bases and JSON Canvas.</li><li><a href="https://github.com/oomkapwn/enquire-mcp" target="_blank" rel="noopener">enquire-mcp (oomkapwn)</a> - A read-only, local-first MCP server that speaks Dataview, Bases and PDFs.</li></ul>
+<p>Bases-aware agent tooling is the newest frontier here. If you have built some, open a pull request.</p>
+<h2 id="tools-utilities">Tools &amp; Utilities</h2>
+<ul><li><a href="https://github.com/stefandanzl/obsidian-dataxtract" target="_blank" rel="noopener">obsidian-dataxtract (stefandanzl)</a> - Exposes an API to extract raw data from tables and filtered Bases objects.</li><li><a href="https://github.com/dhzdhd/jade" target="_blank" rel="noopener">jade (dhzdhd)</a> - A static-site generator for Markdown notes with work-in-progress support for Bases and Canvas.</li><li><a href="https://github.com/tionis/vulcan" target="_blank" rel="noopener">vulcan (tionis)</a> - A wiki CLI for Obsidian-style knowledge bases that can query via Dataview or Bases views.</li></ul>
+<h2 id="related-mcp-and-vault-access">Related: MCP and vault access</h2>
+<p>Useful in the same space, but not Bases-specific.</p>
+<ul><li><a href="https://github.com/coddingtonbear/obsidian-local-rest-api" target="_blank" rel="noopener">obsidian-local-rest-api</a> - A secure REST API and MCP server for your vault.</li><li><a href="https://github.com/MarkusPfundstein/mcp-obsidian" target="_blank" rel="noopener">mcp-obsidian (MarkusPfundstein)</a> - An MCP server over the Obsidian REST API.</li><li><a href="https://github.com/bitbonsai/mcpvault" target="_blank" rel="noopener">mcpvault (bitbonsai)</a> - A lightweight MCP server for safe vault access.</li></ul>
+<h2 id="related-agent-memory">Related: agent memory</h2>
+<ul><li><a href="https://github.com/breferrari/obsidian-mind" target="_blank" rel="noopener">obsidian-mind (breferrari)</a> - A self-organising vault giving coding agents persistent memory.</li><li><a href="https://github.com/jaredrhod/ai-memory-vault" target="_blank" rel="noopener">ai-memory-vault (jaredrhod)</a> - An open-source system and templates for persistent AI memory.</li><li><a href="https://github.com/eugeniughelbur/obsidian-second-brain" target="_blank" rel="noopener">obsidian-second-brain (eugeniughelbur)</a> - A cross-platform skill using your vault as memory for many CLI agents.</li><li><a href="https://github.com/basicmachines-co/basic-memory" target="_blank" rel="noopener">basic-memory</a> - Markdown-native memory you can point at an Obsidian vault.</li></ul>
+<h2 id="related-importers">Related: importers</h2>
+<ul><li><a href="https://github.com/obsidianmd/obsidian-importer" target="_blank" rel="noopener">obsidian-importer</a> - Convert Apple Notes, Evernote, OneNote, Notion and more into Markdown. Official.</li></ul>
+<h2 id="contributing">Contributing</h2>
+<p>Contributions are what make this list useful. Please read <a href="CONTRIBUTING.md">CONTRIBUTING.md</a> before opening a pull request.</p>
+<ul><li>One entry per PR, in the format: <code class="rounded bg-stone-100 px-1 py-0.5 text-[.8em]">- <a href="url">name</a> - one-sentence description.</code></li><li>The project must be usable today, related to Obsidian Bases, and have a README.</li><li>No dead links, no star counts, no self-promotion spam, no paid-only tools without a free tier.</li><li>Entries are checked by CI with awesome-lint and a weekly link checker.</li></ul>
+  </article>
+</main>
+<footer class="max-w-5xl mx-auto px-5 py-10 text-sm text-stone-500 border-t border-stone-200">
+  Built from <a class="text-emerald-700" href="https://github.com/livingdream01/awesome-obsidian-bases/blob/main/README.md">README.md</a> · CC0-1.0 · contributions welcome.
+</footer>
+</body>
+</html>
