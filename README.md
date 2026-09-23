@@ -95,6 +95,7 @@ Vaults you can clone and use immediately, with Bases wired up.
 - [obsidian-team-vault (SimonSkade1)](https://github.com/SimonSkade1/obsidian-team-vault) - A team project-management vault using Bases, Syncthing and Claude Code.
 - [obsidian-media-starter-vault (resMagi)](https://github.com/resMagi/obsidian-media-starter-vault) - Track films, series, books and games with Bases watchlists.
 - [crm-markdown (CLSherrod)](https://github.com/CLSherrod/crm-markdown) - A local-first CRM in Markdown with Bases dashboards for reminders and follow-ups.
+- [bases-vault (livingdream01)](https://github.com/livingdream01/bases-vault) - A Bases-native, agent-ready starter vault with a four-layer structure, an agent index and zero-dependency scripts.
 
 ## Agent skills and MCP
 
