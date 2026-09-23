@@ -11,7 +11,7 @@ ecosystem.
 4. Use this format:
 
    ```markdown
-   - [project-name](https://github.com/owner/project-name) — one-sentence description. *~123★*
+   - [project-name](https://github.com/owner/project-name) — one-sentence description.
    ```
 
 5. Open a PR using the template.
@@ -37,7 +37,7 @@ An entry must:
 
 - Prefer primary sources (the project's own repo or docs).
 - One sentence, factually accurate, no marketing adjectives ("revolutionary", "blazing").
-- Keep the entry's stars roughly current if you include them (`*~1.2k★*`).
+- No star counts — they go stale and invite arguments.
 
 ## Review
 
