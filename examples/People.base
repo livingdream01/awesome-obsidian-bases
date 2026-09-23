@@ -1,0 +1,29 @@
+filters:
+  and:
+    - type == "person"
+properties:
+  org:
+    displayName: Org
+  phone:
+    displayName: Phone
+  email:
+    displayName: Email
+  tags:
+    displayName: Tags
+views:
+  - type: table
+    name: People
+    order:
+      - file.name
+      - org
+      - phone
+      - email
+      - tags
+  - type: table
+    name: By org
+    order:
+      - file.name
+      - phone
+    groupBy:
+      property: org
+      direction: ASC

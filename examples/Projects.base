@@ -1,0 +1,23 @@
+filters:
+  and:
+    - type == "project"
+properties:
+  status:
+    displayName: Status
+  repo:
+    displayName: Repo
+views:
+  - type: table
+    name: Projects
+    order:
+      - file.name
+      - status
+      - repo
+  - type: table
+    name: Active
+    filters:
+      and:
+        - status == "active"
+    order:
+      - file.name
+      - repo
