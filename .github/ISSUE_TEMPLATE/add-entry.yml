@@ -1,0 +1,49 @@
+name: Suggest an entry
+description: Suggest a project to add to Awesome Obsidian Bases
+title: "[Entry] "
+labels: ["entry"]
+body:
+  - type: input
+    id: name
+    attributes:
+      label: Project name
+      placeholder: obsidian-maps
+    validations:
+      required: true
+  - type: input
+    id: url
+    attributes:
+      label: URL
+      placeholder: https://github.com/owner/project
+    validations:
+      required: true
+  - type: textarea
+    id: description
+    attributes:
+      label: One-sentence description
+      placeholder: Map layout for Bases. Display your notes as an interactive map.
+    validations:
+      required: true
+  - type: dropdown
+    id: section
+    attributes:
+      label: Section
+      options:
+        - Views & Layouts
+        - Starter Vaults
+        - Agent Skills & MCP
+        - Agent-Memory Companions
+        - Guides & References
+        - Tooling & Utilities
+        - Other / new section
+    validations:
+      required: true
+  - type: checkboxes
+    id: confirm
+    attributes:
+      label: Confirmation
+      options:
+        - label: It is usable today and has a README
+          required: true
+        - label: It is related to Obsidian Bases
+          required: true

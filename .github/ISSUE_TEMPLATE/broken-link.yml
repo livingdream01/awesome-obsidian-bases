@@ -1,0 +1,23 @@
+name: Broken link or correction
+description: Report a dead link, wrong description, or outdated info
+title: "[Fix] "
+labels: ["fix"]
+body:
+  - type: input
+    id: entry
+    attributes:
+      label: Entry
+      placeholder: Which entry is wrong?
+    validations:
+      required: true
+  - type: textarea
+    id: problem
+    attributes:
+      label: What's wrong?
+      placeholder: The link 404s. / The description is inaccurate. / It's no longer maintained.
+    validations:
+      required: true
+  - type: input
+    id: suggestion
+    attributes:
+      label: Suggested fix (optional)
